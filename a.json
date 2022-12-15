@@ -1,0 +1,14 @@
+[
+  {
+    "resourceType": "AWS::RDS::DBClusterSnapshot",
+    "resourceId": "rds:database-neptune-2022-11-12-10-00",
+    "resourceName": "rds:database-neptune-2022-11-12-10-00",
+    "resourceARN": "arn:aws:rds:us-east-1:512718074009:cluster-snapshot:rds:database-neptune-2022-11-12-10-00",
+    "region": "us-east-1",
+    "availabilityZone": "Multiple Availability Zones",
+    "resourceCreationTime": "2022-11-12T10:00:35.009Z",
+    "configurationCaptureTime": "2022-11-13T01:00:46.197Z",
+    "configurationStateId": 1668301246197,
+    "configurationItemStatus": "ResourceDiscovered"
+  }
+]

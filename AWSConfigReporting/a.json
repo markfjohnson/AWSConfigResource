@@ -1,0 +1,197 @@
+{
+  "fileVersion": "1.0",
+  "configurationItems": [
+    {
+      "relatedEvents": [],
+      "relationships": [
+        {
+          "resourceId": "eni-07d45d7dcbdb50d10",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Contains NetworkInterface"
+        },
+        {
+          "resourceId": "sg-0d009b7bde8c353b2",
+          "resourceType": "AWS::EC2::SecurityGroup",
+          "name": "Is associated with SecurityGroup"
+        },
+        {
+          "resourceId": "subnet-02bf92dbdde6a0157",
+          "resourceType": "AWS::EC2::Subnet",
+          "name": "Is contained in Subnet"
+        },
+        {
+          "resourceId": "vol-0cadb8fc702a35632",
+          "resourceType": "AWS::EC2::Volume",
+          "name": "Is attached to Volume"
+        },
+        {
+          "resourceId": "vpc-033b05a0fcb8c58a3",
+          "resourceType": "AWS::EC2::VPC",
+          "name": "Is contained in Vpc"
+        }
+      ],
+      "configuration": {
+        "amiLaunchIndex": 0,
+        "imageId": "ami-0e72545e0a1a5c759",
+        "instanceId": "i-0009bc3e5be78caa2",
+        "instanceType": "t2.xlarge",
+        "launchTime": "2022-12-14T23:30:18.000Z",
+        "monitoring": {
+          "state": "enabled"
+        },
+        "placement": {
+          "availabilityZone": "us-east-1a",
+          "groupName": "",
+          "tenancy": "default"
+        },
+        "privateDnsName": "ip-10-0-148-96.ec2.internal",
+        "privateIpAddress": "10.0.148.96",
+        "productCodes": [],
+        "publicDnsName": "",
+        "state": {
+          "code": 16,
+          "name": "running"
+        },
+        "stateTransitionReason": "",
+        "subnetId": "subnet-02bf92dbdde6a0157",
+        "vpcId": "vpc-033b05a0fcb8c58a3",
+        "architecture": "x86_64",
+        "blockDeviceMappings": [
+          {
+            "deviceName": "/dev/xvda",
+            "ebs": {
+              "attachTime": "2022-12-14T23:30:19.000Z",
+              "deleteOnTermination": true,
+              "status": "attached",
+              "volumeId": "vol-0cadb8fc702a35632"
+            }
+          }
+        ],
+        "clientToken": "d276144b-e5e1-9755-069f-f4a6e5a05588",
+        "ebsOptimized": false,
+        "enaSupport": true,
+        "hypervisor": "xen",
+        "iamInstanceProfile": {
+          "arn": "arn:aws:iam::512718074009:instance-profile/mddstorage-ECSClusterECSMinSizeECSScalingCapacityECSMinSizeInstanceProfile0DE798B8-x2No7j0K38hZ",
+          "id": "AIPAXOYDA6CM6K54R7A6W"
+        },
+        "elasticGpuAssociations": [],
+        "elasticInferenceAcceleratorAssociations": [],
+        "networkInterfaces": [
+          {
+            "attachment": {
+              "attachTime": "2022-12-14T23:30:18.000Z",
+              "attachmentId": "eni-attach-0941e46d2a858e99a",
+              "deleteOnTermination": true,
+              "deviceIndex": 0,
+              "status": "attached",
+              "networkCardIndex": 0
+            },
+            "description": "",
+            "groups": [
+              {
+                "groupName": "mddstorage-ECSClusterECSMinSizeECSScalingCapacityECSMinSizeInstanceSecurityGroup7561D1D6-1SD4DC3ZBLRHV",
+                "groupId": "sg-0d009b7bde8c353b2"
+              }
+            ],
+            "ipv6Addresses": [],
+            "macAddress": "02:29:1c:36:7f:89",
+            "networkInterfaceId": "eni-07d45d7dcbdb50d10",
+            "ownerId": "512718074009",
+            "privateDnsName": "ip-10-0-148-96.ec2.internal",
+            "privateIpAddress": "10.0.148.96",
+            "privateIpAddresses": [
+              {
+                "primary": true,
+                "privateDnsName": "ip-10-0-148-96.ec2.internal",
+                "privateIpAddress": "10.0.148.96"
+              }
+            ],
+            "sourceDestCheck": true,
+            "status": "in-use",
+            "subnetId": "subnet-02bf92dbdde6a0157",
+            "vpcId": "vpc-033b05a0fcb8c58a3",
+            "interfaceType": "interface"
+          }
+        ],
+        "rootDeviceName": "/dev/xvda",
+        "rootDeviceType": "ebs",
+        "securityGroups": [
+          {
+            "groupName": "mddstorage-ECSClusterECSMinSizeECSScalingCapacityECSMinSizeInstanceSecurityGroup7561D1D6-1SD4DC3ZBLRHV",
+            "groupId": "sg-0d009b7bde8c353b2"
+          }
+        ],
+        "sourceDestCheck": true,
+        "tags": [
+          {
+            "key": "Name",
+            "value": "mddstorage/ECSCluster-ECSMinSize/ECS-ScalingCapacity-ECSMinSize"
+          },
+          {
+            "key": "aws:autoscaling:groupName",
+            "value": "mddstorage-ECSClusterECSMinSizeECSScalingCapacityECSMinSizeASG432268BE-1JE8FMGZ3HTX2"
+          },
+          {
+            "key": "aws:cloudformation:stack-name",
+            "value": "mddstorage"
+          },
+          {
+            "key": "aws:cloudformation:logical-id",
+            "value": "ECSClusterECSMinSizeECSScalingCapacityECSMinSizeASG432268BE"
+          },
+          {
+            "key": "aws:cloudformation:stack-id",
+            "value": "arn:aws:cloudformation:us-east-1:512718074009:stack/mddstorage/d1e335d0-7c06-11ed-bf2d-0a535de9113f"
+          },
+          {
+            "key": "Product",
+            "value": "ISV_SA_DEMO"
+          }
+        ],
+        "virtualizationType": "hvm",
+        "cpuOptions": {
+          "coreCount": 4,
+          "threadsPerCore": 1
+        },
+        "capacityReservationSpecification": {
+          "capacityReservationPreference": "open"
+        },
+        "hibernationOptions": {
+          "configured": false
+        },
+        "licenses": [],
+        "metadataOptions": {
+          "state": "applied",
+          "httpTokens": "optional",
+          "httpPutResponseHopLimit": 1,
+          "httpEndpoint": "enabled"
+        },
+        "enclaveOptions": {
+          "enabled": false
+        }
+      },
+      "supplementaryConfiguration": {},
+      "tags": {
+        "aws:autoscaling:groupName": "mddstorage-ECSClusterECSMinSizeECSScalingCapacityECSMinSizeASG432268BE-1JE8FMGZ3HTX2",
+        "aws:cloudformation:stack-name": "mddstorage",
+        "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:512718074009:stack/mddstorage/d1e335d0-7c06-11ed-bf2d-0a535de9113f",
+        "aws:cloudformation:logical-id": "ECSClusterECSMinSizeECSScalingCapacityECSMinSizeASG432268BE",
+        "Product": "ISV_SA_DEMO",
+        "Name": "mddstorage/ECSCluster-ECSMinSize/ECS-ScalingCapacity-ECSMinSize"
+      },
+      "configurationItemVersion": "1.3",
+      "configurationItemCaptureTime": "2022-12-14T23:31:03.628Z",
+      "configurationStateId": 1671060663628,
+      "awsAccountId": "512718074009",
+      "configurationItemStatus": "ResourceDiscovered",
+      "resourceType": "AWS::EC2::Instance",
+      "resourceId": "i-0009bc3e5be78caa2",
+      "ARN": "arn:aws:ec2:us-east-1:512718074009:instance/i-0009bc3e5be78caa2",
+      "awsRegion": "us-east-1",
+      "availabilityZone": "us-east-1a",
+      "configurationStateMd5Hash": "",
+      "resourceCreationTime": "2022-12-14T23:30:18.000Z"
+    }
+  ]
+}
